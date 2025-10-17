@@ -1,0 +1,80 @@
+.user-center-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.user-profile-card {
+  margin-bottom: 24px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-info h2 {
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  font-size: 1.8em;
+}
+
+.profile-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #666;
+}
+
+.profile-meta span {
+  font-size: 0.9em;
+}
+
+.user-content-card {
+  min-height: 400px;
+}
+
+.learning-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.stat-item {
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .profile-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .learning-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .stat-number {
+    font-size: 2.5em;
+  }
+}

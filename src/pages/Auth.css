@@ -1,0 +1,88 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.auth-card .ant-card-head-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #1a1a1a;
+}
+
+.forgot-link {
+  float: right;
+  color: #1890ff;
+}
+
+.forgot-link:hover {
+  color: #40a9ff;
+}
+
+.social-login {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  flex: 1;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.wechat-btn {
+  background: #07c160;
+  color: white;
+}
+
+.wechat-btn:hover {
+  background: #06ae56;
+  color: white;
+}
+
+.qq-btn {
+  background: #12b7f5;
+  color: white;
+}
+
+.qq-btn:hover {
+  background: #0fa7e0;
+  color: white;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  color: #40a9ff;
+}
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 10px;
+  }
+  
+  .social-login {
+    flex-direction: column;
+  }
+}

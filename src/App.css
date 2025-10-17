@@ -1,0 +1,158 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px 0;
+  min-height: calc(100vh - 140px);
+}
+
+/* 响应式布局 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* 通用卡片样式 */
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 按钮样式优化 */
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  border: none;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+}
+
+/* 输入框样式优化 */
+.ant-input, .ant-input-password {
+  border-radius: 6px;
+}
+
+.ant-input:focus, .ant-input-password:focus,
+.ant-input-focused, .ant-input-password-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* 分页器样式 */
+.ant-pagination {
+  text-align: center;
+}
+
+.ant-pagination-item {
+  border-radius: 6px;
+}
+
+.ant-pagination-item-active {
+  border-color: #1890ff;
+}
+
+.ant-pagination-item-active a {
+  color: #1890ff;
+}
+
+/* 加载状态 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.loading-container p {
+  margin-top: 16px;
+  color: #666;
+}
+
+/* 空状态 */
+.ant-empty {
+  padding: 60px 0;
+}
+
+.ant-empty-description {
+  color: #999;
+  font-size: 1.1em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  .main-content {
+    padding: 16px 0;
+  }
+  
+  .ant-card {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+  }
+  
+  .main-content {
+    padding: 12px 0;
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

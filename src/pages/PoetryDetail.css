@@ -1,0 +1,137 @@
+.poetry-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.poetry-card {
+  margin-bottom: 24px;
+}
+
+.poetry-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.poetry-title {
+  font-size: 2.5em;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-family: 'KaiTi', '楷体', serif;
+}
+
+.poetry-meta {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.author {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.dynasty {
+  color: #8c8c8c;
+}
+
+.poetry-content {
+  text-align: center;
+}
+
+.poetry-text {
+  font-family: 'SimSun', '宋体', serif;
+  font-size: 1.4em;
+  line-height: 2.5;
+  color: #333;
+  white-space: pre-wrap;
+  margin: 40px 0;
+}
+
+.poetry-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+.background-section,
+.analysis-section {
+  margin: 32px 0;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #d4af37;
+}
+
+.background-section h3,
+.analysis-section h3 {
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+}
+
+.background-section p,
+.analysis-section p {
+  color: #666;
+  line-height: 1.8;
+  text-indent: 2em;
+}
+
+.comments-card,
+.recommend-card {
+  margin-bottom: 24px;
+}
+
+.comment-input {
+  margin-bottom: 24px;
+}
+
+.comment-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.comment-list .ant-comment {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 0;
+}
+
+.comment-list .ant-comment:last-child {
+  border-bottom: none;
+}
+
+.recommend-card .ant-list-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recommend-card .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .poetry-title {
+    font-size: 2em;
+  }
+  
+  .poetry-text {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .poetry-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .background-section,
+  .analysis-section {
+    padding: 16px;
+    margin: 20px 0;
+  }
+}
